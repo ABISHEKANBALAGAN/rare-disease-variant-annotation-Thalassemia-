@@ -1,0 +1,146 @@
+Jul-30 16:24:38.128 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main4.nf
+Jul-30 16:24:38.617 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-30 16:24:38.877 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-30 16:24:39.038 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-30 16:24:39.048 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-30 16:24:39.057 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-30 16:24:39.160 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-30 16:24:39.352 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /root/.nextflow/config
+Jul-30 16:24:39.366 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-30 16:24:39.382 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /root/.nextflow/config
+Jul-30 16:24:39.386 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-30 16:24:39.545 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jul-30 16:24:39.556 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@464a4442] - activable => nextflow.secret.LocalSecretsProvider@464a4442
+Jul-30 16:24:39.582 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-30 16:24:41.557 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-30 16:24:42.069 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-30 16:24:42.138 [main] DEBUG nextflow.cli.CmdRun - Launching `main4.nf` [disturbed_maxwell] DSL2 - revision: fee50f16a5
+Jul-30 16:24:42.144 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-30 16:24:42.146 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-30 16:24:42.364 [main] DEBUG nextflow.Session - Session UUID: 299dd5e4-533e-4e02-9c3e-c4c5ae27d28a
+Jul-30 16:24:42.366 [main] DEBUG nextflow.Session - Run name: disturbed_maxwell
+Jul-30 16:24:42.369 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-30 16:24:42.412 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-30 16:24:42.434 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 16:24:42.543 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 27337@abishek [127.0.1.1]
+  CPUs: 8 - Mem: 3.7 GB (110.3 MB) - Swap: 1 GB (572.9 MB)
+Jul-30 16:24:42.663 [main] DEBUG nextflow.Session - Work-dir: /mnt/e/rare-disease-variant-annotation/work [v9fs]
+Jul-30 16:24:42.667 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/e/rare-disease-variant-annotation/bin
+Jul-30 16:24:42.732 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-30 16:24:42.776 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-30 16:24:42.805 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-30 16:24:42.988 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-30 16:24:43.142 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-30 16:24:43.595 [main] DEBUG nextflow.Session - Session start
+Jul-30 16:24:43.982 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-30 16:24:44.902 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:VEP_ANNOTATION` matches process VEP_ANNOTATION
+Jul-30 16:24:44.939 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-30 16:24:44.941 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-30 16:24:44.965 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-30 16:24:44.986 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=3.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-30 16:24:44.996 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-30 16:24:45.096 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VEP_ANNOTATION': maxForks=0; fair=false; array=0
+Jul-30 16:24:45.487 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: VEP_ANNOTATION
+Jul-30 16:24:45.507 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-30 16:24:45.544 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VEP_ANNOTATION
+Jul-30 16:24:45.557 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_02b95656ce6ab928: /mnt/e/rare-disease-variant-annotation/main4.nf
+  Script_5933951977f7e739: /mnt/e/rare-disease-variant-annotation/workflow/modules/annotation/VEP.nf
+Jul-30 16:24:45.558 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-30 16:24:45.560 [main] DEBUG nextflow.Session - Session await
+Jul-30 16:24:47.050 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-30 16:24:47.060 [Task submitter] INFO  nextflow.Session - [df/44abfe] Submitted process > VEP_ANNOTATION (1)
+Jul-30 16:28:15.994 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: VEP_ANNOTATION (1); status: COMPLETED; exit: 2; error: -; workDir: /mnt/e/rare-disease-variant-annotation/work/df/44abfec0dfd36bbc3464ac42eeed0b]
+Jul-30 16:28:16.106 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 16:28:16.294 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=VEP_ANNOTATION (1); work-dir=/mnt/e/rare-disease-variant-annotation/work/df/44abfec0dfd36bbc3464ac42eeed0b
+  error [nextflow.exception.ProcessFailedException]: Process `VEP_ANNOTATION (1)` terminated with an error exit status (2)
+Jul-30 16:28:16.574 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'VEP_ANNOTATION (1)'
+
+Caused by:
+  Process `VEP_ANNOTATION (1)` terminated with an error exit status (2)
+
+
+Command executed:
+
+  vep -i SRR32809192.filtered.vcf         --cache         --offline         --assembly GRCh38         --vcf         -o SRR32809192.vep.vcf
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  532268fea377: Download complete
+  71959ec524bd: Download complete
+  d6a4ef4e5808: Download complete
+  9359b6d6f4e6: Download complete
+  6def9aeb2bfd: Download complete
+  1a35334bcc89: Download complete
+  4f2739528a4f: Download complete
+  2324e2787778: Download complete
+  e2f8dcf652e9: Download complete
+  164c4a15f2c5: Download complete
+  e4608970f250: Download complete
+  11bcee4761ac: Download complete
+  b1be0bf5c533: Download complete
+  d2f2564d70db: Download complete
+  02cbcf656aba: Download complete
+  02cbcf656aba: Pull complete
+  6e5b24990644: Pull complete
+  11bcee4761ac: Pull complete
+  4f4fb700ef54: Pull complete
+  71959ec524bd: Pull complete
+  4f2739528a4f: Pull complete
+  d2f2564d70db: Pull complete
+  532268fea377: Pull complete
+  e2f8dcf652e9: Pull complete
+  b1be0bf5c533: Pull complete
+  9359b6d6f4e6: Pull complete
+  e4608970f250: Pull complete
+  d6a4ef4e5808: Pull complete
+  2324e2787778: Pull complete
+  164c4a15f2c5: Pull complete
+  1a35334bcc89: Pull complete
+  6def9aeb2bfd: Pull complete
+  Digest: sha256:11d5eaa8ed462d3322db853670448a2d0eaeddafd96a5d9ff4fd5f6902daf5ad
+  Status: Downloaded newer image for ensemblorg/ensembl-vep:latest
+  
+  -------------------- EXCEPTION --------------------
+  MSG: ERROR: Cache directory /opt/vep/.vep/homo_sapiens not found
+  
+  STACK Bio::EnsEMBL::VEP::CacheDir::dir /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/CacheDir.pm:307
+  STACK Bio::EnsEMBL::VEP::CacheDir::init /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/CacheDir.pm:221
+  STACK Bio::EnsEMBL::VEP::CacheDir::new /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/CacheDir.pm:113
+  STACK Bio::EnsEMBL::VEP::AnnotationSourceAdaptor::get_all_from_cache /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/AnnotationSourceAdaptor.pm:116
+  STACK Bio::EnsEMBL::VEP::AnnotationSourceAdaptor::get_all /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/AnnotationSourceAdaptor.pm:92
+  STACK Bio::EnsEMBL::VEP::BaseRunner::get_all_AnnotationSources /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/BaseRunner.pm:175
+  STACK Bio::EnsEMBL::VEP::Runner::init /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/Runner.pm:128
+  STACK Bio::EnsEMBL::VEP::Runner::run /opt/vep/src/ensembl-vep/modules/Bio/EnsEMBL/VEP/Runner.pm:200
+  STACK toplevel /opt/vep/src/ensembl-vep/vep:46
+  Date (localtime)    = Wed Jul 30 15:27:57 2025
+  Ensembl API version = 114
+  ---------------------------------------------------
+
+Work dir:
+  /mnt/e/rare-disease-variant-annotation/work/df/44abfec0dfd36bbc3464ac42eeed0b
+
+Container:
+  ensemblorg/ensembl-vep
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Jul-30 16:28:16.686 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `VEP_ANNOTATION (1)` terminated with an error exit status (2)
+Jul-30 16:28:16.753 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-30 16:28:16.755 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-30 16:28:16.759 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-30 16:28:16.950 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=3m 29s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-30 16:28:17.001 [TaskFinalizer-1] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Jul-30 16:28:17.382 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-30 16:28:17.565 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

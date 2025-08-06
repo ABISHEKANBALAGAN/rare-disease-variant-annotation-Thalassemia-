@@ -1,0 +1,13 @@
+CHROM,POS,REF,ALT,Gene,Consequence,Impact,Codons,Amino_acids,Protein_position
+11,5225728,T,C,HBB,splice_acceptor_variant,HIGH,NA,NA,NA
+11,5225728,T,C,HBB,downstream_gene_variant,MODIFIER,NA,NA,NA
+11,5225728,T,C,HBB,splice_acceptor_variant&non_coding_transcript_variant,HIGH,NA,NA,NA
+11,5225728,T,C,HBB,downstream_gene_variant,MODIFIER,NA,NA,NA
+11,5225728,T,C,HBB,splice_acceptor_variant&NMD_transcript_variant,HIGH,NA,NA,NA
+11,5225728,T,C,HBB,splice_acceptor_variant,HIGH,NA,NA,NA
+11,5227013,A,G,HBB,synonymous_variant,LOW,1/3,NA,3
+11,5227013,A,G,HBB,synonymous_variant,LOW,3/4,NA,3
+11,5227013,A,G,HBB,upstream_gene_variant,MODIFIER,NA,NA,NA
+11,5227013,A,G,HBB,synonymous_variant,LOW,1/2,NA,3
+11,5227013,A,G,HBB,synonymous_variant&NMD_transcript_variant,LOW,1/3,NA,3
+11,5227013,A,G,HBB,synonymous_variant,LOW,1/3,NA,3

@@ -1,0 +1,10 @@
+# This file link is used to define attributes for paths in the repository.
+URL1="https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR328/092/SRR32809192/SRR32809192_1.fastq.gz"
+URL2="https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR328/092/SRR32809192/SRR32809192_2.fastq.gz"
+
+# This link is used for the reference genome
+URL3="https://ftp.ensembl.org/pub/release-111/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz"
+*.fastq.gz !text !filter !merge !diff
+data/reference/chr11.fa filter=lfs diff=lfs merge=lfs -text
+data/reference/chr11.fa.bwt filter=lfs diff=lfs merge=lfs -text
+data/reference/chr11.fa.sa filter=lfs diff=lfs merge=lfs -text

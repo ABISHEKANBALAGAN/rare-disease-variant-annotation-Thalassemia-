@@ -1,0 +1,3 @@
+CHROM,POS,REF,ALT,Gene,Consequence,Impact,Codons,Amino_acids,Protein_position
+11,5225728,T,C,HBB,splice_acceptor_variant,HIGH,NA,NA,NA
+11,5225728,T,C,HBB,splice_acceptor_variant,HIGH,NA,NA,NA

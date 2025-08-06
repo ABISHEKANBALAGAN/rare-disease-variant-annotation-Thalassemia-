@@ -1,0 +1,68 @@
+Jul-31 18:48:21.086 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main4.nf -resume
+Jul-31 18:48:21.912 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-31 18:48:22.188 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-31 18:48:22.316 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-31 18:48:22.328 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-31 18:48:22.345 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-31 18:48:22.436 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-31 18:48:22.513 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /root/.nextflow/config
+Jul-31 18:48:22.521 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-31 18:48:22.529 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /root/.nextflow/config
+Jul-31 18:48:22.532 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-31 18:48:22.750 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jul-31 18:48:22.761 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5c089b2f] - activable => nextflow.secret.LocalSecretsProvider@5c089b2f
+Jul-31 18:48:22.783 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-31 18:48:24.526 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-31 18:48:25.365 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-31 18:48:25.601 [main] DEBUG nextflow.cli.CmdRun - Launching `main4.nf` [determined_mahavira] DSL2 - revision: fee50f16a5
+Jul-31 18:48:25.607 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-31 18:48:25.610 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-31 18:48:26.599 [main] DEBUG nextflow.Session - Session UUID: 299dd5e4-533e-4e02-9c3e-c4c5ae27d28a
+Jul-31 18:48:26.603 [main] DEBUG nextflow.Session - Run name: determined_mahavira
+Jul-31 18:48:26.607 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-31 18:48:26.666 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-31 18:48:26.704 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-31 18:48:26.863 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 41667@abishek [127.0.1.1]
+  CPUs: 8 - Mem: 3.7 GB (261.3 MB) - Swap: 1 GB (586.3 MB)
+Jul-31 18:48:27.362 [main] DEBUG nextflow.Session - Work-dir: /mnt/e/rare-disease-variant-annotation/work [v9fs]
+Jul-31 18:48:27.372 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/e/rare-disease-variant-annotation/bin
+Jul-31 18:48:27.448 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-31 18:48:27.496 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-31 18:48:27.525 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-31 18:48:27.643 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-31 18:48:27.686 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-31 18:48:28.210 [main] DEBUG nextflow.Session - Session start
+Jul-31 18:48:28.618 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-31 18:48:29.360 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:VEP_ANNOTATION` matches process VEP_ANNOTATION
+Jul-31 18:48:29.405 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-31 18:48:29.406 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-31 18:48:29.438 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-31 18:48:29.488 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=3.7 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-31 18:48:29.579 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-31 18:48:29.716 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VEP_ANNOTATION': maxForks=0; fair=false; array=0
+Jul-31 18:48:30.008 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: VEP_ANNOTATION
+Jul-31 18:48:30.022 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-31 18:48:30.060 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VEP_ANNOTATION
+Jul-31 18:48:30.065 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_02b95656ce6ab928: /mnt/e/rare-disease-variant-annotation/main4.nf
+  Script_c7c3795d53005c76: /mnt/e/rare-disease-variant-annotation/workflow/modules/annotation/VEP.nf
+Jul-31 18:48:30.074 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-31 18:48:30.078 [main] DEBUG nextflow.Session - Session await
+Jul-31 18:48:31.632 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-31 18:48:31.638 [Task submitter] INFO  nextflow.Session - [52/86abe4] Submitted process > VEP_ANNOTATION (1)
+Jul-31 18:52:09.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: VEP_ANNOTATION (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/e/rare-disease-variant-annotation/work/52/86abe455e0dfc7c9fe96fdc5f28ca4]
+Jul-31 18:52:09.528 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-31 18:52:11.327 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-31 18:52:11.415 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-31 18:52:11.416 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-31 18:52:11.451 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-31 18:52:11.528 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3m 37s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-31 18:52:11.842 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-31 18:52:11.989 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-31 18:52:11.998 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,83 @@
+Jul-30 16:21:44.207 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main4.nf
+Jul-30 16:21:44.815 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.6
+Jul-30 16:21:44.905 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/root/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4,nf-wave@1.12.1
+Jul-30 16:21:45.019 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-30 16:21:45.035 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-30 16:21:45.057 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-30 16:21:45.168 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-30 16:21:45.346 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /root/.nextflow/config
+Jul-30 16:21:45.365 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-30 16:21:45.405 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /root/.nextflow/config
+Jul-30 16:21:45.411 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/e/rare-disease-variant-annotation/nextflow.config
+Jul-30 16:21:45.784 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /root/.nextflow/secrets/store.json
+Jul-30 16:21:45.822 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@464a4442] - activable => nextflow.secret.LocalSecretsProvider@464a4442
+Jul-30 16:21:45.900 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-30 16:21:47.821 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jul-30 16:21:48.279 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-30 16:21:48.345 [main] DEBUG nextflow.cli.CmdRun - Launching `main4.nf` [suspicious_goldwasser] DSL2 - revision: ca2974dbac
+Jul-30 16:21:48.351 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-30 16:21:48.352 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-30 16:21:48.559 [main] DEBUG nextflow.Session - Session UUID: c91d8452-37b0-47d0-a8bd-baebda49eda9
+Jul-30 16:21:48.561 [main] DEBUG nextflow.Session - Run name: suspicious_goldwasser
+Jul-30 16:21:48.562 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-30 16:21:48.596 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-30 16:21:48.616 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-30 16:21:48.740 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.6 build 5954
+  Created: 01-07-2025 11:27 UTC (12:27 BST)
+  System: Linux 5.15.167.4-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10+7
+  Encoding: UTF-8 (UTF-8)
+  Process: 26473@abishek [127.0.1.1]
+  CPUs: 8 - Mem: 3.7 GB (93.9 MB) - Swap: 1 GB (573.2 MB)
+Jul-30 16:21:48.944 [main] DEBUG nextflow.Session - Work-dir: /mnt/e/rare-disease-variant-annotation/work [v9fs]
+Jul-30 16:21:48.950 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/e/rare-disease-variant-annotation/bin
+Jul-30 16:21:49.042 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-30 16:21:49.099 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-30 16:21:49.126 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-30 16:21:49.225 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-30 16:21:49.269 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-30 16:21:49.756 [main] DEBUG nextflow.Session - Session start
+Jul-30 16:21:50.472 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-30 16:21:50.894 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_2c25ba44d240b447: /mnt/e/rare-disease-variant-annotation/main4.nf
+Jul-30 16:21:50.904 [main] DEBUG nextflow.Session - Session aborted -- Cause: No such property: VEP_ANNOTATION for class: nextflow.script.WorkflowBinding
+Jul-30 16:21:50.981 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] map
+
+Jul-30 16:21:51.023 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: No such property: VEP_ANNOTATION for class: nextflow.script.WorkflowBinding
+	at groovy.lang.Binding.getVariable(Binding.java:61)
+	at nextflow.script.WorkflowBinding.getVariable(WorkflowBinding.groovy:143)
+	at groovy.lang.Binding.getProperty(Binding.java:117)
+	at nextflow.script.WorkflowBinding.getProperty(WorkflowBinding.groovy:132)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:167)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:325)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:315)
+	at groovy.lang.Closure.getProperty(Closure.java:301)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_2c25ba44d240b447$_runScript_closure1$_closure2.doCall(Script_2c25ba44d240b447:8)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
