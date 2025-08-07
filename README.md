@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Rare Disease Variant Annotation Pipeline 
 
 ## Overview:
@@ -202,6 +201,4 @@ Overall workflow diagram:
 ![flow diagram ](docs/images/flowchart.png)
 
 Contact For questions or suggestions, please contact Abishek Anbalagan through Likedin ('https://www.linkedin.com/in/abishekanbalagan')
-=======
 
->>>>>>> 7eca05df1faf4b6e514cc83e09df8b6bf444e35e
