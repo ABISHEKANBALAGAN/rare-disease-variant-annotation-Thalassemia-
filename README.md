@@ -200,5 +200,5 @@ Overall workflow diagram:
 
 ![flow diagram ](docs/images/flowchart.png)
 
-Contact For questions or suggestions, please contact Abishek Anbalagan through Likedin ('https://www.linkedin.com/in/abishekanbalagan')
+Contact For questions or suggestions, please contact Abishek Anbalagan through Linkedin ('https://www.linkedin.com/in/abishekanbalagan')
 
